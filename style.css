@@ -1,4 +1,7 @@
-:root, *, *::before, *::after {
+:root,
+*,
+*::before,
+*::after {
   margin: 0;
   line-height: 1.5;
   box-sizing: border-box;
@@ -13,16 +16,29 @@ body {
   background-color: black;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-wrap: balance;
   overflow-wrap: break-word;
 }
@@ -32,8 +48,21 @@ h1 {
   font-size: 4rem;
 }
 
-#root, #__next {
+button {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+}
+
+#root,
+#__next {
   isolation: isolate;
+}
+
+#create-account {
+  padding: 4rem 2rem;
 }
 
 .background {
@@ -42,6 +71,7 @@ h1 {
   background-size: 25%;
   background-repeat: repeat;
   background-image: url(images/akatsuki-black-bg.webp);
+  display: none;
 }
 
 .logo {
@@ -54,6 +84,15 @@ h1 {
 }
 
 .container {
-  padding: 2rem;
   width: 70rem;
+}
+
+.question {
+  background-color: crimson;
+  padding: 4rem 2rem;
+}
+
+.submit-or-log-in {
+  padding: 4rem 2rem;
+  background-color: crimson;
 }
