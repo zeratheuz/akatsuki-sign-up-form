@@ -44,16 +44,17 @@ h6 {
 }
 
 h1 {
-  color: red;
+  color: crimson;
   font-size: 4rem;
 }
 
 button {
   color: white;
-  background-color: black;
+  background-color: crimson;
   border: none;
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 #root,
@@ -62,13 +63,14 @@ button {
 }
 
 #create-account {
-  padding: 4rem 2rem;
+  height: 35%;
+  padding: 1rem 2rem;
+  background-color: crimson;
 }
 
 .background {
-  width: auto;
-  height: auto;
-  background-size: 25%;
+  height: 100vh;
+  background-size: 50%;
   background-repeat: repeat;
   background-image: url(images/akatsuki-black-bg.webp);
   display: none;
@@ -84,15 +86,15 @@ button {
 }
 
 .container {
-  width: 70rem;
+  /* width: 70vw; */
 }
 
 .question {
-  background-color: crimson;
+  height: 30%;
   padding: 4rem 2rem;
 }
 
 .submit-or-log-in {
-  padding: 4rem 2rem;
-  background-color: crimson;
+  height: 25%;
+  padding: 2rem 2rem;
 }
