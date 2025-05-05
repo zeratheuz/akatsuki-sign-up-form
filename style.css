@@ -14,6 +14,8 @@ body {
   display: flex;
   height: 100vh;
   background-color: black;
+  justify-items: center;
+  justify-content: center;
 }
 
 img,
@@ -48,6 +50,10 @@ h1 {
   font-size: 4rem;
 }
 
+h3 {
+  margin-bottom: 1rem;
+}
+
 button {
   color: white;
   background-color: crimson;
@@ -65,15 +71,20 @@ button {
 #create-account {
   height: 35%;
   padding: 1rem 2rem;
-  background-color: crimson;
+  background-color: white
+}
+
+#create-account h3 {
+  color: black;
 }
 
 .background {
+  /* width: 30vw; */
   height: 100vh;
   background-size: 50%;
   background-repeat: repeat;
   background-image: url(images/akatsuki-black-bg.webp);
-  display: none;
+  /* display: none; */
 }
 
 .logo {
@@ -90,8 +101,29 @@ button {
 }
 
 .question {
-  height: 30%;
-  padding: 4rem 2rem;
+  height: 40%;
+  margin-right: 10%;
+  padding: 5rem 2rem;
+}
+
+.account-information {
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 40%;
+  justify-content: space-between;
+}
+
+
+.account-information div {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-information label {
+  color: black;
+  font-weight: bold;
+  font-size: .7rem;
 }
 
 .submit-or-log-in {
