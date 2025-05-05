@@ -48,6 +48,7 @@ h6 {
 h1 {
   color: crimson;
   font-size: 4rem;
+  font-family: "Lacquer", system-ui;
 }
 
 h3 {
@@ -56,11 +57,25 @@ h3 {
 
 button {
   color: white;
+  font-weight: bold;
   background-color: crimson;
   border: none;
   padding: 0.5rem 2rem;
   border-radius: 0.5rem;
   margin-bottom: 1rem;
+}
+
+button:hover {
+  background-color: red;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: red;
 }
 
 #root,
@@ -78,39 +93,39 @@ button {
   color: black;
 }
 
+.lacquer-regular {
+  font-family: "Lacquer", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 .background {
-  /* width: 30vw; */
   height: 100vh;
   background-size: 50%;
   background-repeat: repeat;
   background-image: url(images/akatsuki-black-bg.webp);
-  /* display: none; */
 }
 
 .logo {
-  width: 30rem;
+  width: 24rem;
   display: flex;
   margin-top: 20vh;
+  padding: 1.6rem;
   align-items: center;
   justify-content: center;
-  background-color: black;
-}
-
-.container {
-  /* width: 70vw; */
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .question {
   height: 40%;
-  margin-right: 10%;
-  padding: 5rem 2rem;
+  padding: 7rem 2rem 1rem;
 }
 
 .account-information {
   gap: 1rem;
   display: flex;
   flex-wrap: wrap;
-  margin-right: 40%;
+  margin-right: 20%;
   justify-content: space-between;
 }
 
@@ -126,7 +141,17 @@ button {
   font-size: .7rem;
 }
 
+.account-information input {
+  color: black;
+}
+
 .submit-or-log-in {
   height: 25%;
   padding: 2rem 2rem;
+}
+
+@media screen and (min-width: 1300px) {
+  .account-information {
+    margin-right: 50%;
+  }
 }
