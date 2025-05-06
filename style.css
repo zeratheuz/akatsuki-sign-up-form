@@ -10,6 +10,10 @@
   color: white;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   display: flex;
   height: 100vh;
@@ -48,6 +52,7 @@ h3 {
 button {
   color: white;
   font-weight: bold;
+  cursor: pointer;
   background-color: crimson;
   border: none;
   padding: 0.5rem 2rem;
@@ -147,6 +152,17 @@ a:hover {
 
 .account-information input {
   color: black;
+  appearance: none;
+  border: 3px solid;
+}
+
+.account-information input:invalid {
+  border: solid red;
+}
+
+.account-information input:focus {
+  box-sizing: border-box;
+  border: solid blue;
 }
 
 .submit-or-log-in {
