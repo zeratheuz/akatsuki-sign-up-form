@@ -13,7 +13,7 @@
 body {
   display: flex;
   height: 100vh;
-  background-color: black;
+  background-color: brown;
   justify-items: center;
   justify-content: center;
 }
@@ -34,19 +34,9 @@ select {
   font: inherit;
 }
 
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  text-wrap: balance;
-  overflow-wrap: break-word;
-}
 
 h1 {
-  color: crimson;
+  color: #f24841;
   font-size: 4rem;
   font-family: "Lacquer", system-ui;
 }
@@ -66,7 +56,7 @@ button {
 }
 
 button:hover {
-  background-color: red;
+  background-color: black;
 }
 
 a {
@@ -75,7 +65,7 @@ a {
 }
 
 a:hover {
-  color: red;
+  color: black;
 }
 
 #root,
@@ -86,7 +76,7 @@ a:hover {
 #create-account {
   height: 35%;
   padding: 1rem 2rem;
-  background-color: white
+  background-color: white;
 }
 
 #create-account h3 {
@@ -107,13 +97,11 @@ a:hover {
 }
 
 .logo {
-  width: 24rem;
+  width: 24.5rem;
   display: flex;
-  margin-top: 20vh;
-  padding: 1.6rem;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 19.5vh;
 }
 
 .question {
